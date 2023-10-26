@@ -4,4 +4,13 @@ myInstruments = [`saxophone`, `flute`, `clarinet`, `trumpet`, `trombone`];
 //Write code to transform it to include tuba, and bassoon.
 
 myInstruments.push (`tuba`,`bassoon`);
-console.log(myInstruments);
+
+// const getFirstInstrument = (instruments) => {
+//     return instruments[0];
+// }
+
+const getLastInstrument = (instruments) => {
+    return instruments[myInstruments.length - 1];
+}
+
+console.log(getLastInstrument(myInstruments));
