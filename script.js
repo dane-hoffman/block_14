@@ -1,1 +1,2 @@
-myInstruments [`saxophone`, `flute`, `clarinet`, `trumpet`, `trombone`];
+myInstruments = [`saxophone`, `flute`, `clarinet`, `trumpet`, `trombone`];
+console.log(myInstruments);
