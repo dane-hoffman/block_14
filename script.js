@@ -5,12 +5,28 @@ myInstruments = [`saxophone`, `flute`, `clarinet`, `trumpet`, `trombone`];
 
 myInstruments.push (`tuba`,`bassoon`);
 
-// const getFirstInstrument = (instruments) => {
-//     return instruments[0];
-// }
+const getFirstInstrument = (instruments) => {
+    return instruments[0];
+}
 
 const getLastInstrument = (instruments) => {
     return instruments[myInstruments.length - 1];
 }
 
-console.log(getLastInstrument(myInstruments));
+const getFirstAndLastInstruments = (instruments) => {
+    const output = [];
+    output.push(instruments[0])
+    output.push(instruments[instruments.length -1])
+    return output;
+}
+
+const getFirstThreeInstruments = () => {
+    const output = [];
+    for (let i=0;i<3;i++){
+        output.push(myInstruments[i]);
+    }
+    return output;
+}
+
+
+console.log(getFirstThreeInstruments(myInstruments));
